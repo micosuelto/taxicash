@@ -1,9 +1,123 @@
-<html>
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>TAXI CASH - APP</title>
+  
+  <!-- Included CSS Files (Uncompressed) -->
+  <!--
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+  -->
+  
+  <!-- Included CSS Files (Compressed) -->
+  <link rel="stylesheet" href="stylesheets/foundation.min.css">
+  <link rel="stylesheet" href="stylesheets/app.css">
+  <link rel="stylesheet" href="stylesheets/micoworker.css">
+
+  <script src="javascripts/modernizr.foundation.js"></script>
+  <script src="javascripts/micoworker.js"></script>
 </head>
 <body>
-It work
-s
-</body>
 
+
+
+<!-- LOGO -->
+        <header id="header" class="">
+          <object type="image/svg+xml" data="images/logo.svg" width="280" height="70"></object>  
+        </header>
+<!-- FIN LOGO -->
+
+<!-- CIUDAD FILTRO -->
+        <section id="filtro-ciudad">
+        <form action="index_submit" method="" accept-charset="utf-8">
+        <div class="select-div"> 
+            <select name="ciudad" >
+            <option value="Bogotá">Bogotá</option>
+            <option value="Cali">Cali</option>
+            <option value="Cartagena">Cartagena</option>
+          </select>          
+        </div>
+        </form>  
+        </section>
+<!-- FIN CIUDAD FILTRO -->
+
+<!-- TAXIMETRO -->
+          <section id="taximetro-area" >
+            <span id="digito1" class="span-digito-box"><span class="inner-digito">0</span></span>
+            <span id="digito2" class="span-digito-box"><span class="inner-digito">2</span></span>
+            <span id="digito3" class="span-digito-box"><span class="inner-digito">5</span></span>
+          </section>
+<!-- FIN TAXIMETRO -->
+
+<!-- Adicionales -->
+          <section id="adicionales" >
+            <div class="icon-div "> <div id="puerta-icon"  class="inner-icon on"> 
+              <object type="image/svg+xml" data="images/puerta-icon.svg" width="45" height="45"></object>  
+           </div>   </div>
+            <div class="icon-div "> <div id="nocturno-icon"  class="inner-icon"> 
+              <object type="image/svg+xml" data="images/nocturno-icon.svg" width="45" height="45"></object>  
+            </div></div>
+            <div  class="icon-div ">  <div id="domfest-icon" class="inner-icon">
+              <object type="image/svg+xml" data="images/domfest-icon.svg" width="45" height="45"></object>  
+            </div></div>
+            <div  class="icon-div "><div id="aeropuerto-icon" class="inner-icon">
+              <object type="image/svg+xml" data="images/aeropuerto-icon.svg" width="45" height="45"></object>  
+            </div></div>
+            <div  class="icon-div "> <div id="terminal-icon" class="inner-icon">
+              <object type="image/svg+xml" data="images/terminal-icon.svg" width="45" height="45"></object>  
+            </div></div>
+          </section>
+<!-- FIN Adicionales -->
+
+<!-- PRECIOS -->
+
+          <section id="area-precios">
+            <div class="label-pagos">
+              Debes pagar
+            </div>
+            <div id="valor">
+              <div id="valor-pagar">$9.500</div>
+              <div id="valor-pagar-us">(US $5.05)</div>
+
+              <div id="adicionales-valores"><strong>Adicionales:</strong>Puerta a puerta, Recargo nocturno, Domingos y Festivos, Aeropuerto, Terminal</div>
+            </div>
+          </section>
+<!-- PRECIOS -->
+
+<!-- ADS -->
+      <section id="ads-seccion">
+      GOOGLE ADS  
+      </section>
+<!-- FIN ADS -->
+
+     
+  
+  
+  <!-- Included JS Files (Uncompressed) -->
+  <!--
+  <script src="javascripts/jquery.js"></script><script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script><script src="javascripts/jquery.foundation.forms.js"></script><script src="javascripts/jquery.foundation.reveal.js"></script><script src="javascripts/jquery.foundation.orbit.js"></script><script src="javascripts/jquery.foundation.navigation.js"></script><script src="javascripts/jquery.foundation.buttons.js"></script><script src="javascripts/jquery.foundation.tabs.js"></script><script src="javascripts/jquery.foundation.tooltips.js"></script><script src="javascripts/jquery.foundation.accordion.js"></script><script src="javascripts/jquery.placeholder.js"></script><script src="javascripts/jquery.foundation.alerts.js"></script><script src="javascripts/jquery.foundation.topbar.js"></script><script src="javascripts/jquery.foundation.joyride.js"></script><script src="javascripts/jquery.foundation.clearing.js"></script><script src="javascripts/jquery.foundation.magellan.js"></script>
+  -->
+  
+  <!-- Included JS Files (Compressed) -->
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/foundation.min.js"></script>
+  
+  <!-- Initialize JS Plugins -->
+  <script src="javascripts/app.js"></script>
+
+  
+    <script>
+    $(window).load(function(){
+      $("#featured").orbit();
+    });
+    </script> 
+  
+</body>
 </html>
