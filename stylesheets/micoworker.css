@@ -266,4 +266,28 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', end
 #filtro-ciudad select option {
     color: #FFFFFF;
     font-size: 1.3em;
+
+}
+/***/
+
+#tutorial {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	text-align: center;
+	z-index: 90;
+
+  	background-image: url(../images/bg-black.png);
+
+}
+
+#close-tutorial {
+	display: block;
+	width: 65px;
+	height: 65px;
+	margin: 5px auto;
+
+
 }
