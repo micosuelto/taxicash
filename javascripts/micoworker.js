@@ -1,15 +1,11 @@
-(function($){
-		$(document).ready(function(){
+$(document).ready(function(){
 
-		$('#close-tutorial').click(function() {
-			$('#tutorial').fadeOut('slow', function() {
-			// Animation complete.
-		});
-		});
+  $('#close-tutorial, #close-ok').click(function() {
+    $('#tutorial').fadeOut('slow');
+  });
 
-		$(".inner-icon").click(function () {
-			$(this).toggleClass("on");
-		});
+  $(".inner-icon").click(function () {
+    $(this).toggleClass("on");
+  });
 
-		});
 });
